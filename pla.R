@@ -19,10 +19,8 @@ for (i in 1:1000) {
 	if (draw_plots)
 		plot_dataset(data.set)
 
+	# initialize weights for g
 	w <- rep(0, 3)
-	g <- function(x) { 
-		return(sign(sum(w*x)))
-	}
 
 	icount <- 0
 	while (TRUE) {

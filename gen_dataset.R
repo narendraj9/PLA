@@ -2,6 +2,11 @@
 ## This script decides on a target function and generates
 ## a dataset and defines some functions
 
+w <- rep(0, 3)
+g <- function(x) { 
+		return(sign(sum(w*x)))
+	}
+
 # generating two randomly chosen points in [-1,1] x [-1,1]
 p1 <- runif(n=2, min=-1, max=1)
 p2 <- runif(n=2, min=-1, max=1)
